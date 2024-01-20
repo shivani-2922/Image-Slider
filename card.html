@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<>, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            section{
+                perspective: 200px;
+                overflow: hidden;
+                background-color: aquamarine;
+                display: flex;
+                min-height: 100vh;
+                justify-content: center;
+                gap: 30px;
+                align-items: center;
+                flex-wrap: wrap;
+                border: 10px solid black;
+            }
+            div{
+                transition: all 5s ease-in-out;
+                /*transition: transform ls ease-in-out;*/
+                /*transition: scale(0.8) rotate(odeg);*/
+                transform: rotateY(0deg);
+                background-color: wheat;
+                width: 300px;
+                border-radius: 20px;
+                /*border: 1px solid red;*/
+                padding: 10px;
+                opacity: 0.5;
+                /*display: inline-block; */
+                /*margin: 0 auto;*/;
+            }
+            div figure{
+                width: 100%;
+            }
+            figure img{
+                width: 100%;
+                border-radius: 20px;
+            }
+            div article{
+                font-size: 22px;
+                /*font-weight: bold;*/
+            }
+            section:hover div{
+                transform: rotateY(360deg);
+                opacity: 1;
+                cursor: pointer;
+                border: 10px double black;
+                /*transform: scale(1.2) rotate(360deg);*/
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div>
+                <figure>
+                    <img src="c:\Users\v\Desktop\html 5\orange.jpeg.jpg" alt="birthday">
+                </figure>
+                    <article>
+                        <p>
+                            <strong>Name: </strong> Orange <br>
+                            <strong>Price:</strong> &#8377;50<br>
+                            <strong>Description:</strong> An orange has a tough shiny orange skin that holds acid in outside layer.
+                        </p>
+                    </article>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="c:\Users\v\Desktop\html 5\apple.jpeg.jpg" alt="birthday">
+                </figure>
+                <article>
+                    <p>
+                        <strong> Name:</strong> Apple <br>
+                        <strong> Price:</strong> &#8377;80<br>
+                        <strong> Description:</strong> Apple is a sweet and delicious fruit that is very healthy.
+                    </p>
+                </article>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="c:\Users\v\Desktop\html 5\mango.jpeg.jpg" alt="birthday">
+                </figure>
+                <article>
+                    <p>
+                        <strong> Name:</strong> Mango <br>
+                        <strong> Price:</strong> &#8377;180<br>
+                        <strong> Description:</strong> Mango is the national fruit of India which is loved by one and all.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </body>
+</html>
